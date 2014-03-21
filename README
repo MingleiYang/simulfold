@@ -1,0 +1,11 @@
+javac -O *.java
+
+java SimulFold initial_alignment_file initial_tree_file [-T] [-A] [-S]
+
+The alignment file must be in fasta-format, the tree must be in rooted tree
+newick format, and white spaces are not allowed. The headers in the fasta file
+must match the labels in the newick file.
+
+The optional -T flag will allow tree movements in MCMC, the optional -A flag
+will allow alignment movements in MCMC, the optional -S flag will allow
+structure movements in the MCMC.
