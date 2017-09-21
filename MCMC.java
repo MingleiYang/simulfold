@@ -129,7 +129,7 @@ public class MCMC{
 	double oldLogLikelihood = alignment[i].logLikelihood(tree[i],temperature[i]);
 
 	// Find the possible intervals to be resampled
-	HashSet intervalSet = new HashSet(); // HashSet contains SingleStranded objects
+	HashSet<SingleStranded> intervalSet = new HashSet<>(); // HashSet contains SingleStranded objects
 	AlignmentColumn actual = alignment[i].first;
 
 	while(actual != null){
